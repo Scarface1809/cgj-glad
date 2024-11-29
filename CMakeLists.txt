@@ -3,7 +3,7 @@ project(glad)
 
 option(GLAD_INSTALL "Generate the install target" ON)
 
-add_library(glad src/gl.c)
+add_library(glad src/glad.c)
 target_include_directories(glad
     PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
